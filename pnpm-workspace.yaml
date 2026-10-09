@@ -2,3 +2,12 @@ minimumReleaseAge: 0
 minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
 shellEmulator: true
+catalog:
+  '@antfu/eslint-config': ^9.5.1
+  '@opencode/plugin': ^2.0.26
+  '@types/bun': ^1.4.2
+  bumpp: ^12.3.0
+  eslint: ^10.12.0
+  tsdown: ^0.23.0
+  typescript: ^5.9.3
+  vitest: ^5.0.3
