@@ -2,6 +2,7 @@
   "name": "opencode-dpsk-search",
   "type": "module",
   "version": "0.0.0",
+  "packageManager": "pnpm@11.13.0",
   "description": "OpenCode plugin that replaces the built-in websearch tool with one backed by DeepSeek's server-side web search.",
   "license": "MIT",
   "keywords": [
@@ -23,7 +24,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
-    "test": "vitest",
+    "test": "vitest --run",
     "prepack": "pnpm build",
     "release": "bumpp -r"
   },
