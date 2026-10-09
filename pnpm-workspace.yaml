@@ -2,3 +2,6 @@ minimumReleaseAge: 0
 minimumReleaseAgeExcludePrune: true
 trustPolicy: no-downgrade
 shellEmulator: true
+
+allowBuilds:
+  msgpackr-extract: true
