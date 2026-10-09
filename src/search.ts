@@ -2,7 +2,6 @@ import process from 'node:process'
 import {
   ANTHROPIC_VERSION,
   DEEPSEEK_URL,
-  MAX_TOKENS,
   MODEL,
   SYSTEM_PROMPT,
   WEB_SEARCH_TOOL,
@@ -28,7 +27,6 @@ export async function searchWeb(query: string, signal?: AbortSignal): Promise<st
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: MAX_TOKENS,
       system: SYSTEM_PROMPT,
       messages: [{ role: 'user', content: `Perform a web search for the query: ${query}` }],
       tools: [WEB_SEARCH_TOOL],
