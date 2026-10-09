@@ -5,6 +5,8 @@ Removes OpenCode's built-in `websearch` tool and adds a `dpsksearch` tool backed
 ## Install
 
 ```bash
+opencode plugin add @liyang8246/opencode-dpsk-search
+# or from GitHub:
 opencode plugin add github:liyang8246/opencode-dpsk-search
 ```
 
