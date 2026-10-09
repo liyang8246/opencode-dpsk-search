@@ -1,6 +1,6 @@
 # opencode-dpsk-search
 
-Replaces OpenCode's built-in `websearch` tool with one backed by DeepSeek's server-side web search. Same tool name, same input — models and permission rules keep working unchanged.
+Removes OpenCode's built-in `websearch` tool and adds a `dpsksearch` tool backed by DeepSeek's server-side web search.
 
 ## Install
 
@@ -11,6 +11,12 @@ opencode plugin add github:liyang8246/opencode-dpsk-search
 ## Usage
 
 Set `DEEPSEEK_API_KEY` in your environment.
+
+The model calls `dpsksearch` with a `query`:
+
+```text
+dpsksearch {"query": "深圳今天天气"}
+```
 
 ## License
 

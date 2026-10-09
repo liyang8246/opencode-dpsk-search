@@ -7,7 +7,7 @@ const plugin: Plugin.Plugin = {
     await context.tool.transform((editor) => {
       editor.remove('websearch')
       editor.add({
-        name: 'websearch',
+        name: 'dpsksearch',
         description: 'Search the web through DeepSeek\'s server-side web search. Use it for anything recent or beyond your knowledge cutoff instead of guessing. Returns findings with source URLs.',
         input: {
           type: 'object',
@@ -24,7 +24,7 @@ const plugin: Plugin.Plugin = {
           }
           catch (error) {
             const message = error instanceof Error ? error.message : String(error)
-            return { content: `websearch failed: ${message}` }
+            return { content: `dpsksearch failed: ${message}` }
           }
         },
       })
