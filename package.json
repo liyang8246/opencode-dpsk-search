@@ -1,0 +1,40 @@
+{
+  "name": "opencode-dpsk-search",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "OpenCode plugin that replaces the built-in webfetch/websearch tools with a DeepSeek server-side web search tool (dpsk_search).",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "deepseek",
+    "web-search"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "prepack": "pnpm build",
+    "release": "bumpp -r"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.5.1",
+    "@opencode/plugin": "^2.0.26",
+    "@types/bun": "^1.4.2",
+    "bumpp": "^12.3.0",
+    "eslint": "^10.12.0",
+    "tsdown": "^0.23.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  }
+}
