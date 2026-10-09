@@ -43,5 +43,5 @@ jobs:
 
       - uses: softprops/action-gh-release@v3
         with:
-          name: "@liyang8246/opencode-dpsk-search ${{ github.ref_name }}"
+          name: '@liyang8246/opencode-dpsk-search ${{ github.ref_name }}'
           body: ${{ steps.notes.outputs.log }}
