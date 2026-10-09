@@ -12,15 +12,18 @@ const plugin: Plugin.Plugin = {
         input: {
           type: 'object',
           properties: {
-            query: { type: 'string', description: 'Search query' },
+            question: {
+              type: 'string',
+              description: 'A natural-language question describing what to find out — full sentence, not keyword lists',
+            },
           },
-          required: ['query'],
+          required: ['question'],
           additionalProperties: false,
         },
         options: { codemode: false },
         execute: async (input, toolContext) => {
           try {
-            return { content: await searchWeb(String((input as { query: string }).query), toolContext.signal) }
+            return { content: await searchWeb(String((input as { question: string }).question), toolContext.signal) }
           }
           catch (error) {
             const message = error instanceof Error ? error.message : String(error)

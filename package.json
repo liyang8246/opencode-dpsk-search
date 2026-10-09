@@ -1,7 +1,7 @@
 {
   "name": "@liyang8246/opencode-dpsk-search",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "packageManager": "pnpm@11.15.0",
   "description": "OpenCode plugin that replaces the built-in websearch tool with one backed by DeepSeek's server-side web search.",
   "license": "MIT",

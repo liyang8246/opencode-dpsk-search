@@ -14,11 +14,13 @@ opencode plugin add github:liyang8246/opencode-dpsk-search
 
 Set `DEEPSEEK_API_KEY` in your environment.
 
-The model calls `dpsksearch` with a `query`:
+The model calls `dpsksearch` with a `question`:
 
 ```text
-dpsksearch {"query": "深圳今天天气"}
+dpsksearch {"question": "深圳今天天气怎么样"}
 ```
+
+Pass a full natural-language sentence, not keyword lists.
 
 ## Cost
 

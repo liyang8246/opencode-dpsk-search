@@ -12,7 +12,7 @@ interface TextBlock {
   text?: string
 }
 
-export async function searchWeb(query: string, signal?: AbortSignal): Promise<string> {
+export async function searchWeb(question: string, signal?: AbortSignal): Promise<string> {
   const apiKey = process.env.DEEPSEEK_API_KEY
   if (!apiKey)
     throw new Error('DEEPSEEK_API_KEY is not set')
@@ -28,7 +28,7 @@ export async function searchWeb(query: string, signal?: AbortSignal): Promise<st
     body: JSON.stringify({
       model: MODEL,
       system: SYSTEM_PROMPT,
-      messages: [{ role: 'user', content: `Perform a web search for the query: ${query}` }],
+      messages: [{ role: 'user', content: `Perform a web search to answer the following question: ${question}` }],
       tools: [WEB_SEARCH_TOOL],
     }),
     signal,
