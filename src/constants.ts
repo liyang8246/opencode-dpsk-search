@@ -2,7 +2,7 @@ export const DEEPSEEK_URL = 'https://api.deepseek.com/anthropic/v1/messages'
 export const ANTHROPIC_VERSION = '2023-06-01'
 export const MODEL = 'deepseek-v4-flash'
 export const WEB_SEARCH_TOOL = {
-  type: 'web_search_20250305',
+  type: 'web_search_20260209',
   name: 'web_search',
 } as const
 
